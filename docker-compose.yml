@@ -3,4 +3,5 @@ services:
   app:
     build: 
       context: app
-    ports: "8103:8103"
+    ports: 
+      - "8103:8103"
