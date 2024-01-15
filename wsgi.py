@@ -60,3 +60,6 @@ def index():
         createUser(email, name, password)
 
         return json.dumps({'success':True}), 200, {'ContentType':'application/json'} 
+
+if __name__ == "__main__":
+    app.run(debug=False)
