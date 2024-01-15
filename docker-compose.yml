@@ -3,5 +3,8 @@ services:
   app:
     build: 
       context: app
+    command: python3 wsgi.py
+    volumes:
+      - .:/
     ports: 
       - "8103:8103"
